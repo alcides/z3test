@@ -7,6 +7,10 @@
 `docker run --interactive --tty --rm --volume "$PWD":/wd --workdir "/wd" --entrypoint "/wd/test.bash" "confident/headrest"`
 
 
+# Nota
+
+Tive de reordenar os triplos em ambos os modelos, para serem parsed na ordem correcta.
+
 # Conclusions
 
 Both OSes output the same thing for both models (Linux and Mac models).
