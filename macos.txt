@@ -1,5 +1,3 @@
-
-
 (declare-sort IVMap)
 (declare-sort SVMap)
 

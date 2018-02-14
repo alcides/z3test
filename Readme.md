@@ -1,10 +1,14 @@
 
 # Run on macos / native linux: 
-`bash test.bash`
+```
+bash test.bash
+```
 
 # Run on docker:
 
-`docker run --interactive --tty --rm --volume "$PWD":/wd --workdir "/wd" --entrypoint "/wd/test.bash" "confident/headrest"`
+```
+docker run --interactive --tty --rm --volume "$PWD":/wd --workdir "/wd" --entrypoint "/wd/test.bash" "confident/headrest"
+```
 
 
 # Nota
