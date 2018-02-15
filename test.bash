@@ -9,15 +9,14 @@ echo "OS: $OS $ARCH"
 
 echo "--------- Java output --------- "
 if [ "$(uname)" == "Darwin" ]; then
-    java -Djava.library.path=z3mac T
+    jlp=z3mac
 else
-    java -Djava.library.path=z3linux T
-fi
-
-
-if [ "$(uname)" != "Darwin" ]; then
     export PYTHONPATH="z3linux/python/"
+    PATH=./z3linux/:$PATH
+    jlp=z3linux
 fi
+java -Djava.library.path=$jlp T
+
 
 echo "--------  Python output ------- "
 python t.py

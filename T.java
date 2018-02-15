@@ -11,9 +11,12 @@ public class T {
     System.out.print("Z3 Full Version String: ");
     System.out.println(Version.getFullVersion());
     
+    Log.open("linux_model.log");
     checkFile("linux.txt");
+    Log.close();
+    Log.open("macos_model.log");
     checkFile("macos.txt");
-   
+    Log.close();
   }
   
   

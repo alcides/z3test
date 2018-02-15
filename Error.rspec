@@ -1,0 +1,14 @@
+specification Erro
+
+resource Contact
+
+def CREATED = 201
+
+{
+	request in {body: integer} &&&
+	(forall c: Contact . c.id == 0)
+}
+	POST /contacts [alias CreateResource, creates Contact]
+{
+	response.code == CREATED
+}

@@ -1,0 +1,209 @@
+V "4.6.0.0 Jan 17 2018"
+R
+C 3
+= 0x7fee68e158a8
+R
+P 0x7fee68e158a8
+S "model"
+S "true"
+C 5
+R
+P 0x7fee68e158a8
+C 7
+= 0x7fee69153408
+R
+P 0x7fee68e158a8
+C 4
+R
+P 0x7fee69153408
+U 2
+C 327
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+S "macos.txt"
+U 0
+s 0
+p 0
+U 0
+s 0
+p 0
+C 334
+= 0x7fee6a1a2d60
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 255
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 252
+= 0x7fee69193e18
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee69193e18
+C 207
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 258
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 257
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 256
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee6a1a2d60
+C 9
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+C 406
+= 0x7fee68e18f48
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18f48
+C 414
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+C 13
+= 0x7fee68e18a78
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18a78
+C 14
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+S "candidate_models"
+C 30
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+$ |candidate_models|
+C 200
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18a78
+$ |candidate_models|
+I 1
+C 16
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+S "fail_if_inconclusive"
+C 30
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+$ |fail_if_inconclusive|
+C 200
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18a78
+$ |fail_if_inconclusive|
+I 0
+C 16
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+S "smt.random_seed"
+C 30
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+$ |smt.random_seed|
+C 200
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18a78
+$ |smt.random_seed|
+U 0
+C 17
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18f48
+P 0x7fee68e18a78
+C 413
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18f48
+U 1
+P 0x7fee6a1a2d60
+p 1
+C 426
+R
+P 0x7fee69153408
+C 337
+R
+P 0x7fee69153408
+P 0x7fee68e18f48
+C 432
+R
+P 0x7fee69153408
+C 337
