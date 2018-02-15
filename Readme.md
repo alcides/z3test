@@ -1,4 +1,4 @@
-  e# Debugging process of z3 behaviour on RSL
+# Debugging process of z3 behaviour on RSL
 
 rsl-terminal is a headrest specification validator. Headrest is a language used to specifify REST APIs. rsl-terminal
 makes usage of z3 to validate subtyping, using the official Java bindings. rsl-terminal includes com.microsoft.z3 jar, but requires .so or .dylibs to be available in `java.library.path`.
