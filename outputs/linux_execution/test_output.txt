@@ -1,16 +1,32 @@
-Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 OS: Linux x86_64
---------- Java output --------- 
+--------- Java version --------- 
 Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
-Z3 Major Version: 4
-Z3 Full Version: 4.6.0.0
-Z3 Full Version String: Z3 4.6.0.0
+Z3 Full Version String: Z3 4.6.1.0
+--------  Python version ------- 
+Z3 4.6.1.0
+-----  Command-line version ----- 
+Z3 version 4.6.1 - 64 bit
+--------------------------
+Model: linux.smt2
+cmline: unsat 
+python: unsat
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 WARNING: an assumption must be a propositional variable or the negation of one
-linux.txt sexpr:UNKNOWN
+java: UNKNOWN
+java reason: unknown
+--------------------------
+Model: macos.smt2
+cmline: unsat 
+python: unsat
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
 WARNING: an assumption must be a propositional variable or the negation of one
-macos.txt sexpr:UNKNOWN
---------  Python output ------- 
-Z3 4.6.0.0
-OS: Linux on x86_64
-Linux sexpr:unsat
-Macos sexpr:unsat
+java: UNKNOWN
+java reason: unknown
+--------------------------
+Model: small.smt2
+cmline: unsat 
+python: unsat
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF8
+WARNING: an assumption must be a propositional variable or the negation of one
+java: UNKNOWN
+java reason: unknown
