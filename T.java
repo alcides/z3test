@@ -4,31 +4,16 @@ import com.microsoft.z3.*;
 
 public class T {
   public static void main(String[] args) {
-    System.out.print("Z3 Major Version: ");
-    System.out.println(Version.getMajor());
-    System.out.print("Z3 Full Version: ");
-    System.out.println(Version.getString());
-    System.out.print("Z3 Full Version String: ");
-    System.out.println(Version.getFullVersion());
-    
-    Log.open("linux_model.log");
-    checkFile("linux.txt");
-    Log.close();
-    Log.open("macos_model.log");
-    checkFile("macos.txt");
-    Log.close();
-  }
-  
-  
-  public static void setParams(Solver s, Context ctx) {
-    int numberAttempt = 0;
-    Params params = ctx.mkParams();
-    params.add("candidate_models", true);
-    params.add("fail_if_inconclusive", false);
-    params.add("smt.random_seed", 1391 * numberAttempt);
-    if (numberAttempt > 0)
-        params.add("timeout", Math.min(1500 + 500 * (numberAttempt - 1), 10000));
-    s.setParameters(params);
+      
+    if (args.length == 0) {
+      System.out.print("Z3 Full Version String: ");
+      System.out.println(Version.getFullVersion());
+    } else {
+      String fname = args[0];
+      Log.open(fname + ".log");
+      checkFile(fname);
+      Log.close();
+    }
   }
   
   public static void checkFile(String fname) {
@@ -44,10 +29,9 @@ public class T {
         new Symbol[0],
         new FuncDecl[0]);
       Solver s = ctx.mkSolver();
-      setParams(s, ctx);
-      System.out.println(fname + " sexpr:" + s.check(e));
+      System.out.println("java: " + s.check(e));
       
-      System.out.println("Reason: " + s.getReasonUnknown());
+      System.out.println("java reason: " + s.getReasonUnknown());
     } catch (Z3Exception ex) {
       throw ex;
     }

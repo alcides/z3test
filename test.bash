@@ -7,7 +7,7 @@ OS=`uname`
 ARCH=`uname -m`
 echo "OS: $OS $ARCH"
 
-echo "--------- Java output --------- "
+echo "--------- Java version --------- "
 if [ "$(uname)" == "Darwin" ]; then
     jlp=z3mac
 else
@@ -18,18 +18,23 @@ fi
 java -Djava.library.path=$jlp T
 
 
-echo "--------  Python output ------- "
+echo "--------  Python version ------- "
 python t.py
 
 
-echo "--------  Command output ------- "
+echo "-----  Command-line version ----- "
 z3 --version
 
-for m in linux macos; do
-  cp "$m.txt" t.model
-  echo "(check-sat)" >> t.model
-  echo "$m sexpr: $(z3 -smt2 t.model) "
-  rm t.model
+for m in *.smt2; do
+  cp "$m" /tmp/model.smt2
+  echo "(check-sat)" >> /tmp/model.smt2
+  echo "--------------------------"
+  echo "Model: $m"
+  echo "cmline: $(z3 -smt2 /tmp/model.smt2) "
+  python t.py "$m"
+  java -Djava.library.path=$jlp T "$m"
+  
+  rm /tmp/model.smt2
 done
 
 
