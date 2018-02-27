@@ -10,7 +10,7 @@ public class T {
       System.out.println(Version.getFullVersion());
     } else {
       String fname = args[0];
-      Log.open(fname + ".log");
+      Log.open(fname + "_java.log");
       checkFile(fname);
       Log.close();
     }
