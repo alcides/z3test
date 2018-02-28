@@ -4,10 +4,12 @@ import com.microsoft.z3.*;
 
 public class T {
   public static void main(String[] args) {
+    
+    System.out.println(System.getProperty("java.library.path"));
       
     if (args.length == 0) {
       System.out.print("Z3 Full Version String: ");
-      System.out.println(Version.getFullVersion());
+      System.out.println(Version.getString());
     } else {
       String fname = args[0];
       Log.open(fname + "_java.log");
