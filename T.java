@@ -25,13 +25,11 @@ public class T {
       
       Context ctx = new Context(cfg);
       
-      BoolExpr e = ctx.parseSMTLIB2File(fname, 
-        new Symbol[0],
-        new Sort[0],
-        new Symbol[0],
-        new FuncDecl[0]);
       Solver s = ctx.mkSolver();
-      System.out.println("java: " + s.check(e));
+      
+      s.fromFile(fname);
+
+      System.out.println("java: " + s.check());
       
       System.out.println("java reason: " + s.getReasonUnknown());
     } catch (Z3Exception ex) {
